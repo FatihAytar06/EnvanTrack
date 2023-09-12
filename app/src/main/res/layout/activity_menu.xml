@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.MenuActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_transparent_2"
+            android:scaleType="center"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taleplerimBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TALEPLERİM"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/edittext_menu" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/envanterBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="ENVANTER LİSTESİ"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/edittext_menu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rollerBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="ROLLER"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/edittext_menu" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yardimBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Yardım"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/edittext_menu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logKayitlariBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="log kayıtları"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/edittext_menu"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kullaniciGoruntuleBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="kullanıcı LİSTESİ"
+            android:fontFamily="@font/inter_bold"
+            android:background="@drawable/edittext_menu" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_menu"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+        <TextView
+            android:id="@+id/stokAdedi_ActivityDetails_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stok Adedi: "
+            android:layout_gravity="right"
+            />
+
+            <ImageView
+                android:id="@+id/detailImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@drawable/ic_launcher_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stoktan Çıkaran Kişi : "
+                android:fontFamily="@font/inter_bold"
+                />
+                <TextView
+                    android:id="@+id/stoktanCikaranTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:fontFamily="@font/inter_light"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Çıkarılacak Stok Sayısı : "
+                    android:fontFamily="@font/inter_bold"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teslim Alan Kişi : "
+                    android:fontFamily="@font/inter_bold"
+                    />
+                <EditText
+                    android:id="@+id/stokTeslimAlanTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teslim Alan İmzası"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/inter_bold"
+                />
+
+            <com.kyanogen.signatureview.SignatureView
+                xmlns:sign="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/signature_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                sign:penSize="5dp"
+                sign:backgroundColor="#000000"
+                sign:penColor="#ffffff"
+                sign:enableSignature="true"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clearSignatureBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@drawable/button_background"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:elevation="30dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="imzayı temizle" />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/confirmBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_background"
+                        android:textColor="#ffffff"
+                        android:padding="10dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="onayla" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/stoktanCikarılacakTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_light" />
+
+    </LinearLayout>
+
+</LinearLayout>

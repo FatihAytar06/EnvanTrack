@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    tools:context=".Activities.TalepDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_menu"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/talepDetailsActivityEnvanterAdiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Envanter Adı : "
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginBottom="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/talepDetailsActivityImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@drawable/ic_launcher_background" />
+            <TextView
+                android:id="@+id/talepDetailsActivityStokAdediTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talep edilem adet: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/talepDetailsActivityTalepEdenTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talep eden: "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/talepTamamlaBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_background"
+                        android:textColor="#ffffff"
+                        android:padding="10dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="TALEBİ KALDIR" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/talepEtBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_background"
+                        android:textColor="#ffffff"
+                        android:padding="10dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:visibility="gone"
+                        android:text="TALEP ET" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

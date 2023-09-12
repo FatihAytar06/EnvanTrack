@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1039717179227",
+    "project_id": "cbiko-6d918",
+    "storage_bucket": "cbiko-6d918.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039717179227:android:0b23f98b274e7d9092047e",
+        "android_client_info": {
+          "package_name": "com.example.mystockss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039717179227-vvmt11fbcl2pgdquon2h4ta33kqmr151.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT1NH-NSrZECxZ1g78hllYKJ58xXvwKgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039717179227-vvmt11fbcl2pgdquon2h4ta33kqmr151.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
